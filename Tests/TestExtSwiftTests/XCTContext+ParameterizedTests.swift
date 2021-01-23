@@ -11,7 +11,7 @@ import XCTest
 class XCTContext_ParameterizedTests: XCTestCase {
     func testRunActivity_tuples() throws {
         var tuples = [(1, 1), (2, 2)]
-        XCTContext.runActivity(named: "Tuples", src: Src {
+        XCTContext.runActivity(named: "Tuples", {
             (1, 1)
             (2, 2)
         }) { (_, arg, expected) in
@@ -20,10 +20,10 @@ class XCTContext_ParameterizedTests: XCTestCase {
             XCTAssertEqual(tuple.1, expected)
         }
     }
-    
+
     func testRunActivity_arrays() throws {
         var tuples = [(1, 1), (2, 2)]
-        XCTContext.runActivity(named: "Arrays", src: Src {
+        XCTContext.runActivity(named: "Arrays", {
             [(1, 1)]
             [(2, 2)]
         }) { (_, arg, expected) in
@@ -35,7 +35,7 @@ class XCTContext_ParameterizedTests: XCTestCase {
     
     func testRunActivity_lined() throws {
         var tuples = [(1, 1), (2, 2)]
-        XCTContext.runActivity(named: "Arrays", src: Src {
+        XCTContext.runActivity(named: "Arrays", {
             s(1, 1)
             s(2, 2)
         }) { (_, arg, expected, line) in
@@ -47,7 +47,7 @@ class XCTContext_ParameterizedTests: XCTestCase {
 
     func testRunActivity_array() throws {
         var tuples = [(1, 1), (2, 2)]
-        XCTContext.runActivity(named: "Array", src: [
+        XCTContext.runActivity(named: "Array", [
             s(1, 1),
             s(2, 2)
         ]) { (_, arg, expected, line) in
@@ -61,5 +61,6 @@ class XCTContext_ParameterizedTests: XCTestCase {
         ("testRunActivity_tuples", testRunActivity_tuples),
         ("testRunActivity_arrays", testRunActivity_tuples),
         ("testRunActivity_lined", testRunActivity_lined),
+        ("testRunActivity_array", testRunActivity_array),
     ]
 }

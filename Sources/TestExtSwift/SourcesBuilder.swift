@@ -25,7 +25,3 @@ public struct SourcesBuilder {
         array
     }
 }
-
-public func s<Argument, ExpectedResult>(_ argument: Argument, _ expectedResult: ExpectedResult, _ line: UInt = #line) -> (Argument, ExpectedResult, UInt) {
-    (argument, expectedResult, line)
-}
