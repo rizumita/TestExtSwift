@@ -8,9 +8,7 @@
 import Foundation
 
 public protocol SourcesProtocol {
-    associatedtype Argument
-    associatedtype ExpectedResult
-    associatedtype Line
+    associatedtype Source
     
-    var sources: [(Argument, ExpectedResult, Line)] { get }
+    var sources: [Source] { get }
 }

@@ -7,10 +7,10 @@
 
 import Foundation
 
-public struct Src<Argument, ExpectedResult, Line>: SourcesProtocol {
-    public init(@SourcesBuilder _ generate: () -> [(Argument, ExpectedResult, Line)]) {
+public struct Src<Source>: SourcesProtocol {
+    public init(@SourcesBuilder _ generate: () -> [Source]) {
         sources = generate()
     }
-
-    public var sources: [(Argument, ExpectedResult, Line)]
+    
+    public var sources: [Source]
 }

@@ -9,12 +9,12 @@ import Foundation
 
 @_functionBuilder
 public struct SourcesBuilder {
-    public static func buildBlock<Argument, ExpectedResult>(_ array: [(Argument, ExpectedResult)]...) -> [(Argument, ExpectedResult, ())] {
-        array.flatMap { $0.map { argument, expectedResult in (argument, expectedResult, ()) } }
+    public static func buildBlock<Argument, ExpectedResult>(_ array: [(Argument, ExpectedResult)]...) -> [(Argument, ExpectedResult)] {
+        array.flatMap { $0 }
     }
 
-    public static func buildBlock<Argument, ExpectedResult>(_ array: (Argument, ExpectedResult)...) -> [(Argument, ExpectedResult, ())] {
-        array.map { argument, expectedResult in (argument, expectedResult, ()) }
+    public static func buildBlock<Argument, ExpectedResult>(_ array: (Argument, ExpectedResult)...) -> [(Argument, ExpectedResult)] {
+        array
     }
 
     public static func buildBlock<Argument, ExpectedResult>(_ array: [(Argument, ExpectedResult, UInt)]...) -> [(Argument, ExpectedResult, UInt)] {
