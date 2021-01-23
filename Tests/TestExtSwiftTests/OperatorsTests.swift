@@ -25,6 +25,6 @@ class OperatorsTests: XCTestCase {
     }
 
     static var allTests = [
-        ("testExample", testDirectProduct),
+        ("testDirectProduct", testDirectProduct),
     ]
 }
