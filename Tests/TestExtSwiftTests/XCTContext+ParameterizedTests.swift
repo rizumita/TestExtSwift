@@ -11,10 +11,10 @@ import XCTest
 class XCTContext_ParameterizedTests: XCTestCase {
     func testRunActivity_tuples() throws {
         var tuples = [(1, 1), (2, 2)]
-        XCTContext.runActivity(named: "Tuples", {
+        XCTContext.runActivity(named: "Tuples") {
             (1, 1)
             (2, 2)
-        }) { (_, arg, expected) in
+        } test: { (_, arg, expected) in
             let tuple = tuples.removeFirst()
             XCTAssertEqual(tuple.0, arg)
             XCTAssertEqual(tuple.1, expected)
@@ -23,10 +23,10 @@ class XCTContext_ParameterizedTests: XCTestCase {
 
     func testRunActivity_arrays() throws {
         var tuples = [(1, 1), (2, 2)]
-        XCTContext.runActivity(named: "Arrays", {
+        XCTContext.runActivity(named: "Arrays") {
             [(1, 1)]
             [(2, 2)]
-        }) { (_, arg, expected) in
+        } test: { (_, arg, expected) in
             let tuple = tuples.removeFirst()
             XCTAssertEqual(tuple.0, arg)
             XCTAssertEqual(tuple.1, expected)

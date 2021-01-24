@@ -12,7 +12,7 @@ import XCTest
 public extension XCTContext {
     class func runActivity<Src, Argument, ExpectedResult, Result>(named name: String,
                                                                   _ src: Src,
-                                                                  _ test: @escaping (XCTActivity, Argument, ExpectedResult) throws -> Result) rethrows where Src: Sequence, Src.Element == (Argument, ExpectedResult) {
+                                                                  test: @escaping (XCTActivity, Argument, ExpectedResult) throws -> Result) rethrows where Src: Sequence, Src.Element == (Argument, ExpectedResult) {
         for (argument, expectedResult) in src {
             _ = try XCTContext.runActivity(named: name) { activity in
                 try test(activity, argument, expectedResult)
@@ -22,7 +22,7 @@ public extension XCTContext {
     
     class func runActivity<Src, Argument, ExpectedResult, Result>(named name: String,
                                                                   _ src: Src,
-                                                                  _ test: @escaping (XCTActivity, Argument, ExpectedResult, UInt) throws -> Result) rethrows where Src: Sequence, Src.Element == (Argument, ExpectedResult, UInt) {
+                                                                  test: @escaping (XCTActivity, Argument, ExpectedResult, UInt) throws -> Result) rethrows where Src: Sequence, Src.Element == (Argument, ExpectedResult, UInt) {
         for (argument, expectedResult, line) in src {
             _ = try XCTContext.runActivity(named: name) { activity in
                 try test(activity, argument, expectedResult, line)
@@ -31,8 +31,8 @@ public extension XCTContext {
     }
     
     class func runActivity<Argument, ExpectedResult, Result>(named name: String,
-                                                             @SourcesBuilder _ src: () -> [(Argument, ExpectedResult)],
-                                                             _ test: @escaping (XCTActivity, Argument, ExpectedResult) throws -> Result) rethrows {
+                                                             @SourcesBuilder src: () -> [(Argument, ExpectedResult)],
+                                                             test: @escaping (XCTActivity, Argument, ExpectedResult) throws -> Result) rethrows {
         for (argument, expectedResult) in src() {
             _ = try XCTContext.runActivity(named: name) { activity in
                 try test(activity, argument, expectedResult)
@@ -42,7 +42,7 @@ public extension XCTContext {
     
     class func runActivity<Argument, ExpectedResult, Result>(named name: String,
                                                              @SourcesBuilder _ src: () -> [(Argument, ExpectedResult, UInt)],
-                                                             _ test: @escaping (XCTActivity, Argument, ExpectedResult, UInt) throws -> Result) rethrows {
+                                                             test: @escaping (XCTActivity, Argument, ExpectedResult, UInt) throws -> Result) rethrows {
         for (argument, expectedResult, line) in src() {
             _ = try XCTContext.runActivity(named: name) { activity in
                 try test(activity, argument, expectedResult, line)
