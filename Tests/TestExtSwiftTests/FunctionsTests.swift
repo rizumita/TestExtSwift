@@ -30,4 +30,10 @@ class FunctionsTests: XCTestCase {
         XCTAssertEqual(result[1].0, 2)
         XCTAssertEqual(result[1].1, 2)
     }
+
+
+    static var allTests = [
+        ("testSrc_tuples", testSrc_tuples),
+        ("testSrc_arrays", testSrc_arrays),
+    ]
 }
