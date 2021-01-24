@@ -18,9 +18,9 @@ TestExtSwift extends XCTest.
 ```
 import TestExtSwift
 
-XCTContext.runActivity(named: "succeeded without line") {
-  (1, 1)
-  (2, 2)
+XCTContext.runActivity(named: "succeeded") {
+    (1, 1)
+    (2, 2)
 } test: { (_, argument, expected) in
   XCTAssertEqual(argument, expected)
 }
@@ -51,6 +51,17 @@ XCTContext.runActivity(named: "failed with line") {
 ```
 
 If you want to indicate a line when a test failed, the 's' function generates (Argument, Expected result, Line number) tuple, and the test code can use the line.
+
+```
+XCTContext.runActivity(named: "Array", [
+    s(1, 1),
+    s(2, 2)
+]) { (_, arg, expected, line) in
+    XCTAssertEqual(argument, expected, line: line)
+}
+```
+
+Of course, you can pass a sequence object as a source.
 
 ### Operators
 
