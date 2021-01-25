@@ -7,6 +7,10 @@
 
 import Foundation
 
+public func s<Argument>(_ argument: Argument, _ line: UInt = #line) -> (Argument, UInt) {
+    (argument, line)
+}
+
 public func s<Argument, ExpectedResult>(_ argument: Argument, _ expectedResult: ExpectedResult, _ line: UInt = #line) -> (Argument, ExpectedResult, UInt) {
     (argument, expectedResult, line)
 }
