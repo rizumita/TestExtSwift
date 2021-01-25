@@ -19,11 +19,31 @@ public extension XCTContext {
             }
         }
     }
-
+    
     class func runActivity<Src, Argument, Result>(named name: String,
                                                   _ src: Src,
                                                   test: @escaping (XCTActivity, Argument, UInt) throws -> Result) rethrows where Src: Sequence, Src.Element == (Argument, UInt) {
         for (argument, line) in src {
+            _ = try XCTContext.runActivity(named: name) { activity in
+                try test(activity, argument, line)
+            }
+        }
+    }
+    
+    class func runActivity<Argument, Result>(named name: String,
+                                             @SourcesBuilder src: () -> [Argument],
+                                             test: @escaping (XCTActivity, Argument) throws -> Result) rethrows {
+        for argument in src() {
+            _ = try XCTContext.runActivity(named: name) { activity in
+                try test(activity, argument)
+            }
+        }
+    }
+
+    class func runActivity<Argument, Result>(named name: String,
+                                             @SourcesBuilder src: () -> [(Argument, UInt)],
+                                             test: @escaping (XCTActivity, Argument, UInt) throws -> Result) rethrows {
+        for (argument, line) in src() {
             _ = try XCTContext.runActivity(named: name) { activity in
                 try test(activity, argument, line)
             }
