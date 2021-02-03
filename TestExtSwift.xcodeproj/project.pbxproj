@@ -21,8 +21,12 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		1C4A823380FE6AEF6396B56A /* ECPOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A8D52C333DF423CF6D7C4 /* ECPOperators.swift */; };
+		1C4A826C822AF4F760603EC4 /* PartitionsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A8EEDA733A7B8D5303C7B /* PartitionsBuilder.swift */; };
 		1C4A88A2A1E27FE5BA6C2073 /* XCTContext+ECPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A81F000DAC0CA7118632B /* XCTContext+ECPTests.swift */; };
 		1C4A8960D2E5BBDA1D387909 /* XCTContext+ECP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A82780E35B0BEFA5C2538 /* XCTContext+ECP.swift */; };
+		1C4A8CE26D93EFB0FF1EA863 /* ECPFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A8882D753A5C7FA08FFB4 /* ECPFunctions.swift */; };
+		1C4A8D136EA2AA7830BD133A /* ECPOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A82B3598646D5C323B2F4 /* ECPOperatorsTests.swift */; };
 		1C4A8F233B7C76A076FEEF8D /* EquivalenceClassPartitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A831D15BF9FA0537E877A /* EquivalenceClassPartitionTests.swift */; };
 		1C4A8F35B4D90FAA1A6C8F09 /* EquivalenceClassPartition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A8C038C9F315DD6DCEE7B /* EquivalenceClassPartition.swift */; };
 		OBJ_100 /* _NumericsShims.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-numerics::_NumericsShims::Product" /* _NumericsShims.framework */; };
@@ -72,8 +76,12 @@
 /* Begin PBXFileReference section */
 		1C4A81F000DAC0CA7118632B /* XCTContext+ECPTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTContext+ECPTests.swift"; sourceTree = "<group>"; };
 		1C4A82780E35B0BEFA5C2538 /* XCTContext+ECP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTContext+ECP.swift"; sourceTree = "<group>"; };
+		1C4A82B3598646D5C323B2F4 /* ECPOperatorsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECPOperatorsTests.swift; sourceTree = "<group>"; };
 		1C4A831D15BF9FA0537E877A /* EquivalenceClassPartitionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquivalenceClassPartitionTests.swift; sourceTree = "<group>"; };
+		1C4A8882D753A5C7FA08FFB4 /* ECPFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECPFunctions.swift; sourceTree = "<group>"; };
 		1C4A8C038C9F315DD6DCEE7B /* EquivalenceClassPartition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquivalenceClassPartition.swift; sourceTree = "<group>"; };
+		1C4A8D52C333DF423CF6D7C4 /* ECPOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECPOperators.swift; sourceTree = "<group>"; };
+		1C4A8EEDA733A7B8D5303C7B /* PartitionsBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartitionsBuilder.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Functions.swift */ = {isa = PBXFileReference; path = Functions.swift; sourceTree = "<group>"; };
 		OBJ_11 /* Operators.swift */ = {isa = PBXFileReference; path = Operators.swift; sourceTree = "<group>"; };
 		OBJ_12 /* SourcesBuilder.swift */ = {isa = PBXFileReference; path = SourcesBuilder.swift; sourceTree = "<group>"; };
@@ -161,6 +169,9 @@
 			children = (
 				1C4A82780E35B0BEFA5C2538 /* XCTContext+ECP.swift */,
 				1C4A8C038C9F315DD6DCEE7B /* EquivalenceClassPartition.swift */,
+				1C4A8EEDA733A7B8D5303C7B /* PartitionsBuilder.swift */,
+				1C4A8D52C333DF423CF6D7C4 /* ECPOperators.swift */,
+				1C4A8882D753A5C7FA08FFB4 /* ECPFunctions.swift */,
 			);
 			path = ECP;
 			sourceTree = "<group>";
@@ -170,6 +181,7 @@
 			children = (
 				1C4A81F000DAC0CA7118632B /* XCTContext+ECPTests.swift */,
 				1C4A831D15BF9FA0537E877A /* EquivalenceClassPartitionTests.swift */,
+				1C4A82B3598646D5C323B2F4 /* ECPOperatorsTests.swift */,
 			);
 			path = ECP;
 			sourceTree = "<group>";
@@ -512,6 +524,9 @@
 				OBJ_111 /* XCTContext+Parameterized.swift in Sources */,
 				1C4A8960D2E5BBDA1D387909 /* XCTContext+ECP.swift in Sources */,
 				1C4A8F35B4D90FAA1A6C8F09 /* EquivalenceClassPartition.swift in Sources */,
+				1C4A826C822AF4F760603EC4 /* PartitionsBuilder.swift in Sources */,
+				1C4A823380FE6AEF6396B56A /* ECPOperators.swift in Sources */,
+				1C4A8CE26D93EFB0FF1EA863 /* ECPFunctions.swift in Sources */,
 			);
 		};
 		OBJ_123 /* Sources */ = {
@@ -529,6 +544,7 @@
 				OBJ_139 /* XCTestManifests.swift in Sources */,
 				1C4A88A2A1E27FE5BA6C2073 /* XCTContext+ECPTests.swift in Sources */,
 				1C4A8F233B7C76A076FEEF8D /* EquivalenceClassPartitionTests.swift in Sources */,
+				1C4A8D136EA2AA7830BD133A /* ECPOperatorsTests.swift in Sources */,
 			);
 		};
 		OBJ_152 /* Sources */ = {

@@ -28,6 +28,18 @@ class XCTContext_ECPTests: XCTestCase {
         )
     }
 
+    func testECPAnotherDesc() throws {
+        try (1...100) => {
+            valid("Valid case")
+            => { $0 % 4 == 0 }
+            => { XCTAssertEqual($1 % 4, 0) }
+
+            invalid("Invalid case", representative: 100, order: { $0 <= $1 })
+            => { $0 % 4 != 0 }
+            => { XCTAssertNotEqual($1 % 4, 0) }
+        }
+    }
+
     static var allTests = [
         ("testECP", testECP),
     ]

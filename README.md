@@ -90,7 +90,19 @@ XCTContext.runActivity(named: "setUp", [
 
 Of course, you can pass a sequence object as a source.
 
-### Equivalence class partitioning and Boundary value analysis 
+### Equivalence class partitioning and Boundary value analysis
+
+```swift
+try (1...100) => {
+    valid("Valid case")
+    => { $0 % 4 == 0 }                  // relation
+    => { XCTAssertEqual($1 % 4, 0) }    // test
+
+    invalid("Invalid case", representative: 100, order: { $0 <= $1 })
+    => { $0 % 4 != 0 }                  // relation
+    => { XCTAssertNotEqual($1 % 4, 0) } // test
+}
+```
 
 ```swift
 try XCTContext.runActivity(
