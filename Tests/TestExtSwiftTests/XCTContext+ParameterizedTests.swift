@@ -57,10 +57,20 @@ class XCTContext_ParameterizedTests: XCTestCase {
         }
     }
 
+    func testRunActivity_setUp() throws {
+        XCTContext.runActivity(named: "setUp", [
+            s(1, 1),
+            s(2, 2)
+        ]) { arg in
+            print("setUp: \(arg)")
+        } test: { (_, arg, expected, line) in }
+    }
+
     static var allTests = [
         ("testRunActivity_tuples", testRunActivity_tuples),
         ("testRunActivity_arrays", testRunActivity_tuples),
         ("testRunActivity_lined", testRunActivity_lined),
         ("testRunActivity_array", testRunActivity_array),
+        ("testRunActivity_setUp", testRunActivity_setUp),
     ]
 }
