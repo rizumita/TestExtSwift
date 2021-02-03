@@ -11,13 +11,13 @@ public struct EquivalenceClassPartition<Value, Result> {
     var name: String
     var representative: Int
     var boundary: ((Value, Value) throws -> Bool)?
-    var relation: (Value) -> Bool
+    var relation: (Value) throws -> Bool
     var test: (XCTActivity, Value) throws -> Result
 
     public static func valid(name: String,
                              representative: Int = 100,
                              boundary: ((Value, Value) throws -> Bool)? = .none,
-                             relation: @escaping (Value) -> Bool,
+                             relation: @escaping (Value) throws -> Bool,
                              test: @escaping (XCTActivity, Value) throws -> Result) -> EquivalenceClassPartition<Value, Result> {
         EquivalenceClassPartition<Value, Result>(isValid: true,
                                                  name: name,
@@ -30,7 +30,7 @@ public struct EquivalenceClassPartition<Value, Result> {
     public static func invalid(name: String,
                                representative: Int = 100,
                                boundary: ((Value, Value) throws -> Bool)? = .none,
-                               relation: @escaping (Value) -> Bool,
+                               relation: @escaping (Value) throws -> Bool,
                                test: @escaping (XCTActivity, Value) throws -> Result) -> EquivalenceClassPartition<Value, Result> {
         EquivalenceClassPartition<Value, Result>(isValid: false,
                                                  name: name,
@@ -41,7 +41,7 @@ public struct EquivalenceClassPartition<Value, Result> {
     }
 
     func select<S>(from sequence: S) throws -> [Value] where S: Sequence, S.Element == Value {
-        var filtered = sequence.filter(relation)
+        var filtered = try sequence.filter(relation)
         var result = [Value]()
 
         if let boundary = boundary {
@@ -70,7 +70,7 @@ public extension EquivalenceClassPartition where Value: Comparable {
     static func valid(name: String,
                       representative: Int = 100,
                       boundary: ((Value, Value) throws -> Bool)? = { $0 <= $1 },
-                      relation: @escaping (Value) -> Bool,
+                      relation: @escaping (Value) throws -> Bool,
                       test: @escaping (XCTActivity, Value) throws -> Result) -> EquivalenceClassPartition<Value, Result> {
         EquivalenceClassPartition<Value, Result>(isValid: true,
                                                  name: name,
@@ -83,7 +83,7 @@ public extension EquivalenceClassPartition where Value: Comparable {
     static func invalid(name: String,
                         representative: Int = 100,
                         boundary: ((Value, Value) throws -> Bool)? = { $0 <= $1 },
-                        relation: @escaping (Value) -> Bool,
+                        relation: @escaping (Value) throws -> Bool,
                         test: @escaping (XCTActivity, Value) throws -> Result) -> EquivalenceClassPartition<Value, Result> {
         EquivalenceClassPartition<Value, Result>(isValid: false,
                                                  name: name,

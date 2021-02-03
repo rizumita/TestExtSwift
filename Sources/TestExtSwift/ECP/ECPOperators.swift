@@ -22,13 +22,13 @@ public func =><S, Value>(lhs: S, @PartitionsBuilder rhs: () -> [EquivalenceClass
     }
 }
 
-public func =><Value>(lhs: @escaping (Value) -> Bool,
-                      rhs: @escaping (XCTActivity, Value) -> ())
-        -> ((Value) -> Bool, (XCTActivity, Value) -> ()) {
+public func =><Value>(lhs: @escaping (Value) throws -> Bool,
+                      rhs: @escaping (XCTActivity, Value) throws -> ())
+        -> ((Value) throws -> Bool, (XCTActivity, Value) throws -> ()) {
     (lhs, rhs)
 }
 
-public func =><Value>(lhs: (Bool, String, Int, ((Value, Value) throws -> Bool)?), rhs: ((Value) -> Bool, (XCTActivity, Value) -> ())) -> EquivalenceClassPartition<Value, ()> {
+public func =><Value>(lhs: (Bool, String, Int, ((Value, Value) throws -> Bool)?), rhs: ((Value) throws -> Bool, (XCTActivity, Value) throws -> ())) -> EquivalenceClassPartition<Value, ()> {
     if lhs.0 {
         return .valid(name: lhs.1, representative: lhs.2, boundary: lhs.3, relation: rhs.0, test: rhs.1)
     } else {
