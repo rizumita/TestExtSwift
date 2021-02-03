@@ -18,8 +18,8 @@ class ECPOperatorsTests: XCTestCase {
             => { XCTAssertEqual($1 % 4, 0) }
 
             invalid("Invalid case", representative: 100, order: { $0 <= $1 })
-            => { $0 % 4 != 0 }
-            => { XCTAssertNotEqual($1 % 4, 0) }
+            => relation { $0 % 4 != 0 }
+            => test { XCTAssertNotEqual($1 % 4, 0) }
         }
     }
 

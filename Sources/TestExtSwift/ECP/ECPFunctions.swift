@@ -32,3 +32,11 @@ public func invalid<Value>(_ name: String,
         -> (Bool, String, Int, ((Value, Value) throws -> Bool)?) {
     (false, name, representative, order)
 }
+
+public func relation<Value>(_ rel: @escaping (Value) throws -> Bool) -> (Value) throws -> Bool {
+    rel
+}
+
+public func test<Value>(_ t: @escaping (XCTActivity, Value) throws -> ()) -> (XCTActivity, Value) throws -> () {
+    t
+}
