@@ -9,11 +9,11 @@
 /* Begin PBXAggregateTarget section */
 		"TestExtSwift::TestExtSwiftPackageTests::ProductTarget" /* TestExtSwiftPackageTests */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_33 /* Build configuration list for PBXAggregateTarget "TestExtSwiftPackageTests" */;
+			buildConfigurationList = OBJ_126 /* Build configuration list for PBXAggregateTarget "TestExtSwiftPackageTests" */;
 			buildPhases = (
 			);
 			dependencies = (
-				OBJ_36 /* PBXTargetDependency */,
+				OBJ_129 /* PBXTargetDependency */,
 			);
 			name = TestExtSwiftPackageTests;
 			productName = TestExtSwiftPackageTests;
@@ -21,110 +21,312 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		6A74E1E825BBBC7700D7CF68 /* XCTContext+Parameterized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A74E1E725BBBC7700D7CF68 /* XCTContext+Parameterized.swift */; };
-		6A74E1EE25BBBCA000D7CF68 /* SourcesBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A74E1ED25BBBCA000D7CF68 /* SourcesBuilder.swift */; };
-		6A74E1F425BBBCD000D7CF68 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A74E1F325BBBCD000D7CF68 /* Operators.swift */; };
-		6A74E1FA25BBBD4700D7CF68 /* OperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A74E1F925BBBD4700D7CF68 /* OperatorsTests.swift */; };
-		6A74E26E25BBEF1800D7CF68 /* XCTContext+ParameterizedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A74E26D25BBEF1800D7CF68 /* XCTContext+ParameterizedTests.swift */; };
-		9DFAABE825BC3B0500B587CB /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFAABE725BC3B0500B587CB /* Functions.swift */; };
-		9DFAAC0E25BCED4E00B587CB /* FunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFAAC0D25BCED4E00B587CB /* FunctionsTests.swift */; };
-		OBJ_31 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_43 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* XCTestManifests.swift */; };
-		OBJ_45 /* TestExtSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "TestExtSwift::TestExtSwift::Product" /* TestExtSwift.framework */; };
+		1C4A88A2A1E27FE5BA6C2073 /* XCTContext+ECPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A81F000DAC0CA7118632B /* XCTContext+ECPTests.swift */; };
+		1C4A8960D2E5BBDA1D387909 /* XCTContext+ECP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A82780E35B0BEFA5C2538 /* XCTContext+ECP.swift */; };
+		1C4A8F233B7C76A076FEEF8D /* EquivalenceClassPartitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A831D15BF9FA0537E877A /* EquivalenceClassPartitionTests.swift */; };
+		1C4A8F35B4D90FAA1A6C8F09 /* EquivalenceClassPartition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A8C038C9F315DD6DCEE7B /* EquivalenceClassPartition.swift */; };
+		OBJ_100 /* _NumericsShims.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-numerics::_NumericsShims::Product" /* _NumericsShims.framework */; };
+		OBJ_108 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Functions.swift */; };
+		OBJ_109 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Operators.swift */; };
+		OBJ_110 /* SourcesBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* SourcesBuilder.swift */; };
+		OBJ_111 /* XCTContext+Parameterized.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* XCTContext+Parameterized.swift */; };
+		OBJ_113 /* Algorithms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-algorithms::Algorithms::Product" /* Algorithms.framework */; };
+		OBJ_114 /* RealModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-numerics::RealModule::Product" /* RealModule.framework */; };
+		OBJ_115 /* _NumericsShims.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-numerics::_NumericsShims::Product" /* _NumericsShims.framework */; };
+		OBJ_124 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_136 /* FunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* FunctionsTests.swift */; };
+		OBJ_137 /* OperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* OperatorsTests.swift */; };
+		OBJ_138 /* XCTContext+ParameterizedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* XCTContext+ParameterizedTests.swift */; };
+		OBJ_139 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* XCTestManifests.swift */; };
+		OBJ_141 /* TestExtSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "TestExtSwift::TestExtSwift::Product" /* TestExtSwift.framework */; };
+		OBJ_142 /* Algorithms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-algorithms::Algorithms::Product" /* Algorithms.framework */; };
+		OBJ_143 /* RealModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-numerics::RealModule::Product" /* RealModule.framework */; };
+		OBJ_144 /* _NumericsShims.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-numerics::_NumericsShims::Product" /* _NumericsShims.framework */; };
+		OBJ_153 /* _NumericsShims.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* _NumericsShims.c */; };
+		OBJ_160 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* Package.swift */; };
+		OBJ_166 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* Package.swift */; };
+		OBJ_68 /* Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Chain.swift */; };
+		OBJ_69 /* Chunked.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Chunked.swift */; };
+		OBJ_70 /* Combinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Combinations.swift */; };
+		OBJ_71 /* Cycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Cycle.swift */; };
+		OBJ_72 /* Indexed.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Indexed.swift */; };
+		OBJ_73 /* Partition.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* Partition.swift */; };
+		OBJ_74 /* Permutations.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Permutations.swift */; };
+		OBJ_75 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* Product.swift */; };
+		OBJ_76 /* RandomSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* RandomSample.swift */; };
+		OBJ_77 /* Rotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* Rotate.swift */; };
+		OBJ_78 /* Unique.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* Unique.swift */; };
+		OBJ_80 /* RealModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-numerics::RealModule::Product" /* RealModule.framework */; };
+		OBJ_81 /* _NumericsShims.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-numerics::_NumericsShims::Product" /* _NumericsShims.framework */; };
+		OBJ_90 /* AlgebraicField.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* AlgebraicField.swift */; };
+		OBJ_91 /* ApproximateEquality.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* ApproximateEquality.swift */; };
+		OBJ_92 /* Double+Real.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* Double+Real.swift */; };
+		OBJ_93 /* ElementaryFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* ElementaryFunctions.swift */; };
+		OBJ_94 /* Float+Real.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Float+Real.swift */; };
+		OBJ_95 /* Float16+Real.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* Float16+Real.swift */; };
+		OBJ_96 /* Float80+Real.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* Float80+Real.swift */; };
+		OBJ_97 /* Real.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* Real.swift */; };
+		OBJ_98 /* RealFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* RealFunctions.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		6A74E1E125BBBB6300D7CF68 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "TestExtSwift::TestExtSwift";
-			remoteInfo = TestExtSwift;
-		};
-		6A74E1E425BBBB6F00D7CF68 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "TestExtSwift::TestExtSwiftTests";
-			remoteInfo = TestExtSwiftTests;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		6A74E1E725BBBC7700D7CF68 /* XCTContext+Parameterized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTContext+Parameterized.swift"; sourceTree = "<group>"; };
-		6A74E1ED25BBBCA000D7CF68 /* SourcesBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesBuilder.swift; sourceTree = "<group>"; };
-		6A74E1F325BBBCD000D7CF68 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
-		6A74E1F925BBBD4700D7CF68 /* OperatorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorsTests.swift; sourceTree = "<group>"; };
-		6A74E26D25BBEF1800D7CF68 /* XCTContext+ParameterizedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTContext+ParameterizedTests.swift"; sourceTree = "<group>"; };
-		9DFAABE725BC3B0500B587CB /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
-		9DFAAC0D25BCED4E00B587CB /* FunctionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionsTests.swift; sourceTree = "<group>"; };
-		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
-		OBJ_17 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		OBJ_18 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1C4A81F000DAC0CA7118632B /* XCTContext+ECPTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTContext+ECPTests.swift"; sourceTree = "<group>"; };
+		1C4A82780E35B0BEFA5C2538 /* XCTContext+ECP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTContext+ECP.swift"; sourceTree = "<group>"; };
+		1C4A831D15BF9FA0537E877A /* EquivalenceClassPartitionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquivalenceClassPartitionTests.swift; sourceTree = "<group>"; };
+		1C4A8C038C9F315DD6DCEE7B /* EquivalenceClassPartition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquivalenceClassPartition.swift; sourceTree = "<group>"; };
+		OBJ_10 /* Functions.swift */ = {isa = PBXFileReference; path = Functions.swift; sourceTree = "<group>"; };
+		OBJ_11 /* Operators.swift */ = {isa = PBXFileReference; path = Operators.swift; sourceTree = "<group>"; };
+		OBJ_12 /* SourcesBuilder.swift */ = {isa = PBXFileReference; path = SourcesBuilder.swift; sourceTree = "<group>"; };
+		OBJ_13 /* XCTContext+Parameterized.swift */ = {isa = PBXFileReference; path = "XCTContext+Parameterized.swift"; sourceTree = "<group>"; };
+		OBJ_17 /* FunctionsTests.swift */ = {isa = PBXFileReference; path = FunctionsTests.swift; sourceTree = "<group>"; };
+		OBJ_18 /* OperatorsTests.swift */ = {isa = PBXFileReference; path = OperatorsTests.swift; sourceTree = "<group>"; };
+		OBJ_19 /* XCTContext+ParameterizedTests.swift */ = {isa = PBXFileReference; path = "XCTContext+ParameterizedTests.swift"; sourceTree = "<group>"; };
+		OBJ_20 /* XCTestManifests.swift */ = {isa = PBXFileReference; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		OBJ_24 /* Chain.swift */ = {isa = PBXFileReference; path = Chain.swift; sourceTree = "<group>"; };
+		OBJ_25 /* Chunked.swift */ = {isa = PBXFileReference; path = Chunked.swift; sourceTree = "<group>"; };
+		OBJ_26 /* Combinations.swift */ = {isa = PBXFileReference; path = Combinations.swift; sourceTree = "<group>"; };
+		OBJ_27 /* Cycle.swift */ = {isa = PBXFileReference; path = Cycle.swift; sourceTree = "<group>"; };
+		OBJ_28 /* Indexed.swift */ = {isa = PBXFileReference; path = Indexed.swift; sourceTree = "<group>"; };
+		OBJ_29 /* Partition.swift */ = {isa = PBXFileReference; path = Partition.swift; sourceTree = "<group>"; };
+		OBJ_30 /* Permutations.swift */ = {isa = PBXFileReference; path = Permutations.swift; sourceTree = "<group>"; };
+		OBJ_31 /* Product.swift */ = {isa = PBXFileReference; path = Product.swift; sourceTree = "<group>"; };
+		OBJ_32 /* RandomSample.swift */ = {isa = PBXFileReference; path = RandomSample.swift; sourceTree = "<group>"; };
+		OBJ_33 /* Rotate.swift */ = {isa = PBXFileReference; path = Rotate.swift; sourceTree = "<group>"; };
+		OBJ_34 /* Unique.swift */ = {isa = PBXFileReference; path = Unique.swift; sourceTree = "<group>"; };
+		OBJ_35 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/r_izumita/Workspace/TestExtSwift/.build/checkouts/swift-algorithms/Package.swift"; sourceTree = "<group>"; };
+		OBJ_40 /* AlgebraicField.swift */ = {isa = PBXFileReference; path = AlgebraicField.swift; sourceTree = "<group>"; };
+		OBJ_41 /* ApproximateEquality.swift */ = {isa = PBXFileReference; path = ApproximateEquality.swift; sourceTree = "<group>"; };
+		OBJ_42 /* Double+Real.swift */ = {isa = PBXFileReference; path = "Double+Real.swift"; sourceTree = "<group>"; };
+		OBJ_43 /* ElementaryFunctions.swift */ = {isa = PBXFileReference; path = ElementaryFunctions.swift; sourceTree = "<group>"; };
+		OBJ_44 /* Float+Real.swift */ = {isa = PBXFileReference; path = "Float+Real.swift"; sourceTree = "<group>"; };
+		OBJ_45 /* Float16+Real.swift */ = {isa = PBXFileReference; path = "Float16+Real.swift"; sourceTree = "<group>"; };
+		OBJ_46 /* Float80+Real.swift */ = {isa = PBXFileReference; path = "Float80+Real.swift"; sourceTree = "<group>"; };
+		OBJ_47 /* Real.swift */ = {isa = PBXFileReference; path = Real.swift; sourceTree = "<group>"; };
+		OBJ_48 /* RealFunctions.swift */ = {isa = PBXFileReference; path = RealFunctions.swift; sourceTree = "<group>"; };
+		OBJ_50 /* _NumericsShims.c */ = {isa = PBXFileReference; path = _NumericsShims.c; sourceTree = "<group>"; };
+		OBJ_52 /* _NumericsShims.h */ = {isa = PBXFileReference; path = _NumericsShims.h; sourceTree = "<group>"; };
+		OBJ_53 /* module.modulemap */ = {isa = PBXFileReference; name = module.modulemap; path = "/Users/r_izumita/Workspace/TestExtSwift/.build/checkouts/swift-numerics/Sources/_NumericsShims/include/module.modulemap"; sourceTree = "<group>"; };
+		OBJ_54 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/r_izumita/Workspace/TestExtSwift/.build/checkouts/swift-numerics/Package.swift"; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		"TestExtSwift::TestExtSwift::Product" /* TestExtSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TestExtSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"TestExtSwift::TestExtSwiftTests::Product" /* TestExtSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = TestExtSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_61 /* LICENSE */ = {isa = PBXFileReference; path = LICENSE; sourceTree = "<group>"; };
+		OBJ_62 /* README.md */ = {isa = PBXFileReference; path = README.md; sourceTree = "<group>"; };
+		"TestExtSwift::TestExtSwift::Product" /* TestExtSwift.framework */ = {isa = PBXFileReference; path = TestExtSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"TestExtSwift::TestExtSwiftTests::Product" /* TestExtSwiftTests.xctest */ = {isa = PBXFileReference; path = TestExtSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"swift-algorithms::Algorithms::Product" /* Algorithms.framework */ = {isa = PBXFileReference; path = Algorithms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"swift-numerics::RealModule::Product" /* RealModule.framework */ = {isa = PBXFileReference; path = RealModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"swift-numerics::_NumericsShims::Product" /* _NumericsShims.framework */ = {isa = PBXFileReference; path = _NumericsShims.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_25 /* Frameworks */ = {
+		OBJ_112 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
 			files = (
+				OBJ_113 /* Algorithms.framework in Frameworks */,
+				OBJ_114 /* RealModule.framework in Frameworks */,
+				OBJ_115 /* _NumericsShims.framework in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_44 /* Frameworks */ = {
+		OBJ_140 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
 			files = (
-				OBJ_45 /* TestExtSwift.framework in Frameworks */,
+				OBJ_141 /* TestExtSwift.framework in Frameworks */,
+				OBJ_142 /* Algorithms.framework in Frameworks */,
+				OBJ_143 /* RealModule.framework in Frameworks */,
+				OBJ_144 /* _NumericsShims.framework in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_154 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		OBJ_79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				OBJ_80 /* RealModule.framework in Frameworks */,
+				OBJ_81 /* _NumericsShims.framework in Frameworks */,
+			);
+		};
+		OBJ_99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				OBJ_100 /* _NumericsShims.framework in Frameworks */,
+			);
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		OBJ_10 /* Tests */ = {
+		1C4A879A3D9583DD7F0799F3 /* ECP */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_11 /* TestExtSwiftTests */,
+				1C4A82780E35B0BEFA5C2538 /* XCTContext+ECP.swift */,
+				1C4A8C038C9F315DD6DCEE7B /* EquivalenceClassPartition.swift */,
+			);
+			path = ECP;
+			sourceTree = "<group>";
+		};
+		1C4A8D0460B923DF7DBA1079 /* ECP */ = {
+			isa = PBXGroup;
+			children = (
+				1C4A81F000DAC0CA7118632B /* XCTContext+ECPTests.swift */,
+				1C4A831D15BF9FA0537E877A /* EquivalenceClassPartitionTests.swift */,
+			);
+			path = ECP;
+			sourceTree = "<group>";
+		};
+		OBJ_14 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_15 /* TestExtSwiftTests */,
 			);
 			name = Tests;
+			path = "";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_11 /* TestExtSwiftTests */ = {
+		OBJ_15 /* TestExtSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_13 /* XCTestManifests.swift */,
-				6A74E1F925BBBD4700D7CF68 /* OperatorsTests.swift */,
-				6A74E26D25BBEF1800D7CF68 /* XCTContext+ParameterizedTests.swift */,
-				9DFAAC0D25BCED4E00B587CB /* FunctionsTests.swift */,
+				OBJ_17 /* FunctionsTests.swift */,
+				OBJ_18 /* OperatorsTests.swift */,
+				OBJ_19 /* XCTContext+ParameterizedTests.swift */,
+				OBJ_20 /* XCTestManifests.swift */,
+				1C4A8D0460B923DF7DBA1079 /* ECP */,
 			);
 			name = TestExtSwiftTests;
 			path = Tests/TestExtSwiftTests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_14 /* Products */ = {
+		OBJ_21 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				"TestExtSwift::TestExtSwift::Product" /* TestExtSwift.framework */,
-				"TestExtSwift::TestExtSwiftTests::Product" /* TestExtSwiftTests.xctest */,
+				OBJ_22 /* swift-algorithms 0.0.2 */,
+				OBJ_36 /* swift-numerics 0.0.8 */,
 			);
-			name = Products;
-			sourceTree = BUILT_PRODUCTS_DIR;
+			name = Dependencies;
+			path = "";
+			sourceTree = "<group>";
 		};
-		OBJ_5 = {
+		OBJ_22 /* swift-algorithms 0.0.2 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_23 /* Algorithms */,
+				OBJ_35 /* Package.swift */,
+			);
+			name = "swift-algorithms 0.0.2";
+			path = "";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_23 /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_24 /* Chain.swift */,
+				OBJ_25 /* Chunked.swift */,
+				OBJ_26 /* Combinations.swift */,
+				OBJ_27 /* Cycle.swift */,
+				OBJ_28 /* Indexed.swift */,
+				OBJ_29 /* Partition.swift */,
+				OBJ_30 /* Permutations.swift */,
+				OBJ_31 /* Product.swift */,
+				OBJ_32 /* RandomSample.swift */,
+				OBJ_33 /* Rotate.swift */,
+				OBJ_34 /* Unique.swift */,
+			);
+			name = Algorithms;
+			path = ".build/checkouts/swift-algorithms/Sources/Algorithms";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_36 /* swift-numerics 0.0.8 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_37 /* ComplexModule */,
+				OBJ_38 /* Numerics */,
+				OBJ_39 /* RealModule */,
+				OBJ_49 /* _NumericsShims */,
+				OBJ_54 /* Package.swift */,
+			);
+			name = "swift-numerics 0.0.8";
+			path = "";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_37 /* ComplexModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ComplexModule;
+			path = ".build/checkouts/swift-numerics/Sources/ComplexModule";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_38 /* Numerics */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Numerics;
+			path = ".build/checkouts/swift-numerics/Sources/Numerics";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_39 /* RealModule */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_40 /* AlgebraicField.swift */,
+				OBJ_41 /* ApproximateEquality.swift */,
+				OBJ_42 /* Double+Real.swift */,
+				OBJ_43 /* ElementaryFunctions.swift */,
+				OBJ_44 /* Float+Real.swift */,
+				OBJ_45 /* Float16+Real.swift */,
+				OBJ_46 /* Float80+Real.swift */,
+				OBJ_47 /* Real.swift */,
+				OBJ_48 /* RealFunctions.swift */,
+			);
+			name = RealModule;
+			path = ".build/checkouts/swift-numerics/Sources/RealModule";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_49 /* _NumericsShims */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_50 /* _NumericsShims.c */,
+				OBJ_51 /* include */,
+			);
+			name = _NumericsShims;
+			path = ".build/checkouts/swift-numerics/Sources/_NumericsShims";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_5 /*  */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
-				OBJ_10 /* Tests */,
-				OBJ_14 /* Products */,
-				OBJ_17 /* LICENSE */,
-				OBJ_18 /* README.md */,
+				OBJ_14 /* Tests */,
+				OBJ_21 /* Dependencies */,
+				OBJ_55 /* Products */,
+				OBJ_61 /* LICENSE */,
+				OBJ_62 /* README.md */,
 			);
+			path = "";
 			sourceTree = "<group>";
+		};
+		OBJ_51 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_52 /* _NumericsShims.h */,
+				OBJ_53 /* module.modulemap */,
+			);
+			name = include;
+			path = include;
+			sourceTree = "<group>";
+		};
+		OBJ_55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"swift-numerics::RealModule::Product" /* RealModule.framework */,
+				"TestExtSwift::TestExtSwift::Product" /* TestExtSwift.framework */,
+				"swift-numerics::_NumericsShims::Product" /* _NumericsShims.framework */,
+				"TestExtSwift::TestExtSwiftTests::Product" /* TestExtSwiftTests.xctest */,
+				"swift-algorithms::Algorithms::Product" /* Algorithms.framework */,
+			);
+			name = Products;
+			path = "";
+			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
@@ -132,15 +334,17 @@
 				OBJ_8 /* TestExtSwift */,
 			);
 			name = Sources;
+			path = "";
 			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_8 /* TestExtSwift */ = {
 			isa = PBXGroup;
 			children = (
-				6A74E1E725BBBC7700D7CF68 /* XCTContext+Parameterized.swift */,
-				6A74E1ED25BBBCA000D7CF68 /* SourcesBuilder.swift */,
-				6A74E1F325BBBCD000D7CF68 /* Operators.swift */,
-				9DFAABE725BC3B0500B587CB /* Functions.swift */,
+				OBJ_10 /* Functions.swift */,
+				OBJ_11 /* Operators.swift */,
+				OBJ_12 /* SourcesBuilder.swift */,
+				OBJ_13 /* XCTContext+Parameterized.swift */,
+				1C4A879A3D9583DD7F0799F3 /* ECP */,
 			);
 			name = TestExtSwift;
 			path = Sources/TestExtSwift;
@@ -151,11 +355,9 @@
 /* Begin PBXNativeTarget section */
 		"TestExtSwift::SwiftPMPackageDescription" /* TestExtSwiftPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_27 /* Build configuration list for PBXNativeTarget "TestExtSwiftPackageDescription" */;
+			buildConfigurationList = OBJ_120 /* Build configuration list for PBXNativeTarget "TestExtSwiftPackageDescription" */;
 			buildPhases = (
-				OBJ_30 /* Sources */,
-			);
-			buildRules = (
+				OBJ_123 /* Sources */,
 			);
 			dependencies = (
 			);
@@ -165,14 +367,15 @@
 		};
 		"TestExtSwift::TestExtSwift" /* TestExtSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_20 /* Build configuration list for PBXNativeTarget "TestExtSwift" */;
+			buildConfigurationList = OBJ_103 /* Build configuration list for PBXNativeTarget "TestExtSwift" */;
 			buildPhases = (
-				OBJ_23 /* Sources */,
-				OBJ_25 /* Frameworks */,
-			);
-			buildRules = (
+				OBJ_106 /* Sources */,
+				OBJ_112 /* Frameworks */,
 			);
 			dependencies = (
+				OBJ_116 /* PBXTargetDependency */,
+				OBJ_117 /* PBXTargetDependency */,
+				OBJ_118 /* PBXTargetDependency */,
 			);
 			name = TestExtSwift;
 			productName = TestExtSwift;
@@ -181,20 +384,90 @@
 		};
 		"TestExtSwift::TestExtSwiftTests" /* TestExtSwiftTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_38 /* Build configuration list for PBXNativeTarget "TestExtSwiftTests" */;
+			buildConfigurationList = OBJ_131 /* Build configuration list for PBXNativeTarget "TestExtSwiftTests" */;
 			buildPhases = (
-				OBJ_41 /* Sources */,
-				OBJ_44 /* Frameworks */,
-			);
-			buildRules = (
+				OBJ_134 /* Sources */,
+				OBJ_140 /* Frameworks */,
 			);
 			dependencies = (
-				OBJ_46 /* PBXTargetDependency */,
+				OBJ_145 /* PBXTargetDependency */,
+				OBJ_146 /* PBXTargetDependency */,
+				OBJ_147 /* PBXTargetDependency */,
+				OBJ_148 /* PBXTargetDependency */,
 			);
 			name = TestExtSwiftTests;
 			productName = TestExtSwiftTests;
 			productReference = "TestExtSwift::TestExtSwiftTests::Product" /* TestExtSwiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"swift-algorithms::Algorithms" /* Algorithms */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_64 /* Build configuration list for PBXNativeTarget "Algorithms" */;
+			buildPhases = (
+				OBJ_67 /* Sources */,
+				OBJ_79 /* Frameworks */,
+			);
+			dependencies = (
+				OBJ_82 /* PBXTargetDependency */,
+				OBJ_84 /* PBXTargetDependency */,
+			);
+			name = Algorithms;
+			productName = Algorithms;
+			productReference = "swift-algorithms::Algorithms::Product" /* Algorithms.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"swift-algorithms::SwiftPMPackageDescription" /* swift-algorithmsPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_156 /* Build configuration list for PBXNativeTarget "swift-algorithmsPackageDescription" */;
+			buildPhases = (
+				OBJ_159 /* Sources */,
+			);
+			dependencies = (
+			);
+			name = "swift-algorithmsPackageDescription";
+			productName = "swift-algorithmsPackageDescription";
+			productType = "com.apple.product-type.framework";
+		};
+		"swift-numerics::RealModule" /* RealModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_86 /* Build configuration list for PBXNativeTarget "RealModule" */;
+			buildPhases = (
+				OBJ_89 /* Sources */,
+				OBJ_99 /* Frameworks */,
+			);
+			dependencies = (
+				OBJ_101 /* PBXTargetDependency */,
+			);
+			name = RealModule;
+			productName = RealModule;
+			productReference = "swift-numerics::RealModule::Product" /* RealModule.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"swift-numerics::SwiftPMPackageDescription" /* swift-numericsPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_162 /* Build configuration list for PBXNativeTarget "swift-numericsPackageDescription" */;
+			buildPhases = (
+				OBJ_165 /* Sources */,
+			);
+			dependencies = (
+			);
+			name = "swift-numericsPackageDescription";
+			productName = "swift-numericsPackageDescription";
+			productType = "com.apple.product-type.framework";
+		};
+		"swift-numerics::_NumericsShims" /* _NumericsShims */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_149 /* Build configuration list for PBXNativeTarget "_NumericsShims" */;
+			buildPhases = (
+				OBJ_152 /* Sources */,
+				OBJ_154 /* Frameworks */,
+			);
+			dependencies = (
+			);
+			name = _NumericsShims;
+			productName = _NumericsShims;
+			productReference = "swift-numerics::_NumericsShims::Product" /* _NumericsShims.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -204,11 +477,6 @@
 			attributes = {
 				LastSwiftMigration = 9999;
 				LastUpgradeCheck = 9999;
-				TargetAttributes = {
-					"TestExtSwift::TestExtSwift" = {
-						LastSwiftMigration = 1230;
-					};
-				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "TestExtSwift" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -217,97 +485,187 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5;
-			productRefGroup = OBJ_14 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_55 /* Products */;
+			projectDirPath = .;
 			targets = (
+				"swift-algorithms::Algorithms" /* Algorithms */,
+				"swift-numerics::RealModule" /* RealModule */,
 				"TestExtSwift::TestExtSwift" /* TestExtSwift */,
 				"TestExtSwift::SwiftPMPackageDescription" /* TestExtSwiftPackageDescription */,
 				"TestExtSwift::TestExtSwiftPackageTests::ProductTarget" /* TestExtSwiftPackageTests */,
 				"TestExtSwift::TestExtSwiftTests" /* TestExtSwiftTests */,
+				"swift-numerics::_NumericsShims" /* _NumericsShims */,
+				"swift-algorithms::SwiftPMPackageDescription" /* swift-algorithmsPackageDescription */,
+				"swift-numerics::SwiftPMPackageDescription" /* swift-numericsPackageDescription */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_23 /* Sources */ = {
+		OBJ_106 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
 			files = (
-				6A74E1EE25BBBCA000D7CF68 /* SourcesBuilder.swift in Sources */,
-				9DFAABE825BC3B0500B587CB /* Functions.swift in Sources */,
-				6A74E1E825BBBC7700D7CF68 /* XCTContext+Parameterized.swift in Sources */,
-				6A74E1F425BBBCD000D7CF68 /* Operators.swift in Sources */,
+				OBJ_108 /* Functions.swift in Sources */,
+				OBJ_109 /* Operators.swift in Sources */,
+				OBJ_110 /* SourcesBuilder.swift in Sources */,
+				OBJ_111 /* XCTContext+Parameterized.swift in Sources */,
+				1C4A8960D2E5BBDA1D387909 /* XCTContext+ECP.swift in Sources */,
+				1C4A8F35B4D90FAA1A6C8F09 /* EquivalenceClassPartition.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_30 /* Sources */ = {
+		OBJ_123 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
 			files = (
-				OBJ_31 /* Package.swift in Sources */,
+				OBJ_124 /* Package.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_41 /* Sources */ = {
+		OBJ_134 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
 			files = (
-				OBJ_43 /* XCTestManifests.swift in Sources */,
-				6A74E1FA25BBBD4700D7CF68 /* OperatorsTests.swift in Sources */,
-				6A74E26E25BBEF1800D7CF68 /* XCTContext+ParameterizedTests.swift in Sources */,
-				9DFAAC0E25BCED4E00B587CB /* FunctionsTests.swift in Sources */,
+				OBJ_136 /* FunctionsTests.swift in Sources */,
+				OBJ_137 /* OperatorsTests.swift in Sources */,
+				OBJ_138 /* XCTContext+ParameterizedTests.swift in Sources */,
+				OBJ_139 /* XCTestManifests.swift in Sources */,
+				1C4A88A2A1E27FE5BA6C2073 /* XCTContext+ECPTests.swift in Sources */,
+				1C4A8F233B7C76A076FEEF8D /* EquivalenceClassPartitionTests.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_152 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				OBJ_153 /* _NumericsShims.c in Sources */,
+			);
+		};
+		OBJ_159 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				OBJ_160 /* Package.swift in Sources */,
+			);
+		};
+		OBJ_165 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				OBJ_166 /* Package.swift in Sources */,
+			);
+		};
+		OBJ_67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				OBJ_68 /* Chain.swift in Sources */,
+				OBJ_69 /* Chunked.swift in Sources */,
+				OBJ_70 /* Combinations.swift in Sources */,
+				OBJ_71 /* Cycle.swift in Sources */,
+				OBJ_72 /* Indexed.swift in Sources */,
+				OBJ_73 /* Partition.swift in Sources */,
+				OBJ_74 /* Permutations.swift in Sources */,
+				OBJ_75 /* Product.swift in Sources */,
+				OBJ_76 /* RandomSample.swift in Sources */,
+				OBJ_77 /* Rotate.swift in Sources */,
+				OBJ_78 /* Unique.swift in Sources */,
+			);
+		};
+		OBJ_89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				OBJ_90 /* AlgebraicField.swift in Sources */,
+				OBJ_91 /* ApproximateEquality.swift in Sources */,
+				OBJ_92 /* Double+Real.swift in Sources */,
+				OBJ_93 /* ElementaryFunctions.swift in Sources */,
+				OBJ_94 /* Float+Real.swift in Sources */,
+				OBJ_95 /* Float16+Real.swift in Sources */,
+				OBJ_96 /* Float80+Real.swift in Sources */,
+				OBJ_97 /* Real.swift in Sources */,
+				OBJ_98 /* RealFunctions.swift in Sources */,
+			);
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_36 /* PBXTargetDependency */ = {
+		OBJ_101 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "swift-numerics::_NumericsShims" /* _NumericsShims */;
+		};
+		OBJ_116 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "swift-algorithms::Algorithms" /* Algorithms */;
+		};
+		OBJ_117 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "swift-numerics::RealModule" /* RealModule */;
+		};
+		OBJ_118 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "swift-numerics::_NumericsShims" /* _NumericsShims */;
+		};
+		OBJ_129 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "TestExtSwift::TestExtSwiftTests" /* TestExtSwiftTests */;
-			targetProxy = 6A74E1E425BBBB6F00D7CF68 /* PBXContainerItemProxy */;
 		};
-		OBJ_46 /* PBXTargetDependency */ = {
+		OBJ_145 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "TestExtSwift::TestExtSwift" /* TestExtSwift */;
-			targetProxy = 6A74E1E125BBBB6300D7CF68 /* PBXContainerItemProxy */;
+		};
+		OBJ_146 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "swift-algorithms::Algorithms" /* Algorithms */;
+		};
+		OBJ_147 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "swift-numerics::RealModule" /* RealModule */;
+		};
+		OBJ_148 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "swift-numerics::_NumericsShims" /* _NumericsShims */;
+		};
+		OBJ_82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "swift-numerics::RealModule" /* RealModule */;
+		};
+		OBJ_84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "swift-numerics::_NumericsShims" /* _NumericsShims */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_21 /* Debug */ = {
+		OBJ_104 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				DEFINES_MODULE = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/swift-numerics/Sources/_NumericsShims/include",
+				);
 				INFOPLIST_FILE = TestExtSwift.xcodeproj/TestExtSwift_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MARKETING_VERSION = 0.1.0;
-				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
-					"-weak_framework",
-					XCTest,
-					"-weak-lswiftXCTest",
 				);
-				OTHER_SWIFT_FLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/.build/checkouts/swift-numerics/Sources/_NumericsShims/include/module.modulemap",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = TestExtSwift;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+				);
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = TestExtSwift;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -315,36 +673,43 @@
 			};
 			name = Debug;
 		};
-		OBJ_22 /* Release */ = {
+		OBJ_105 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				DEFINES_MODULE = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/swift-numerics/Sources/_NumericsShims/include",
+				);
 				INFOPLIST_FILE = TestExtSwift.xcodeproj/TestExtSwift_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MARKETING_VERSION = 0.1.0;
-				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
-					"-weak_framework",
-					XCTest,
-					"-weak-lswiftXCTest",
 				);
-				OTHER_SWIFT_FLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/.build/checkouts/swift-numerics/Sources/_NumericsShims/include/module.modulemap",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = TestExtSwift;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+				);
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = TestExtSwift;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -352,20 +717,290 @@
 			};
 			name = Release;
 		};
-		OBJ_28 /* Debug */ = {
+		OBJ_121 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 5.3.0";
+				OTHER_SWIFT_FLAGS = (
+					"-swift-version",
+					5,
+					"-I",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+					"-sdk",
+					"/Applications/Xcode 12.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk",
+					"-package-description-version",
+					5.3.0,
+				);
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		OBJ_29 /* Release */ = {
+		OBJ_122 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 5.3.0";
+				OTHER_SWIFT_FLAGS = (
+					"-swift-version",
+					5,
+					"-I",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+					"-sdk",
+					"/Applications/Xcode 12.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk",
+					"-package-description-version",
+					5.3.0,
+				);
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_127 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_128 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/swift-numerics/Sources/_NumericsShims/include",
+				);
+				INFOPLIST_FILE = TestExtSwift.xcodeproj/TestExtSwiftTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/.build/checkouts/swift-numerics/Sources/_NumericsShims/include/module.modulemap",
+				);
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+				);
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = TestExtSwiftTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_133 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/swift-numerics/Sources/_NumericsShims/include",
+				);
+				INFOPLIST_FILE = TestExtSwift.xcodeproj/TestExtSwiftTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/.build/checkouts/swift-numerics/Sources/_NumericsShims/include/module.modulemap",
+				);
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+				);
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = TestExtSwiftTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_150 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/swift-numerics/Sources/_NumericsShims/include",
+				);
+				INFOPLIST_FILE = TestExtSwift.xcodeproj/_NumericsShims_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-NumericsShims";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+				);
+				TARGET_NAME = _NumericsShims;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_151 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/swift-numerics/Sources/_NumericsShims/include",
+				);
+				INFOPLIST_FILE = TestExtSwift.xcodeproj/_NumericsShims_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-NumericsShims";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+				);
+				TARGET_NAME = _NumericsShims;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_157 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = (
+					"-swift-version",
+					5,
+					"-I",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+					"-sdk",
+					"/Applications/Xcode 12.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk",
+					"-package-description-version",
+					5.1.0,
+				);
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = (
+					"-swift-version",
+					5,
+					"-I",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+					"-sdk",
+					"/Applications/Xcode 12.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk",
+					"-package-description-version",
+					5.1.0,
+				);
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_163 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = (
+					"-swift-version",
+					5,
+					"-I",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+					"-sdk",
+					"/Applications/Xcode 12.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk",
+					"-package-description-version",
+					5.0.0,
+				);
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_164 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = (
+					"-swift-version",
+					5,
+					"-I",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+					"-sdk",
+					"/Applications/Xcode 12.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk",
+					"-package-description-version",
+					5.0.0,
+				);
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -385,56 +1020,30 @@
 					"SWIFT_PACKAGE=1",
 					"DEBUG=1",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-DXcode",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TVOS_DEPLOYMENT_TARGET = 10.0;
-				USE_HEADERMAP = NO;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		OBJ_34 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		OBJ_35 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Release;
-		};
-		OBJ_39 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				SUPPORTED_PLATFORMS = (
+					macosx,
+					iphoneos,
+					iphonesimulator,
+					appletvos,
+					appletvsimulator,
+					watchos,
+					watchsimulator,
 				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = TestExtSwift.xcodeproj/TestExtSwiftTests_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = TestExtSwiftTests;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					SWIFT_PACKAGE,
+					DEBUG,
+				);
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
 			};
 			name = Debug;
 		};
@@ -451,41 +1060,202 @@
 					"$(inherited)",
 					"SWIFT_PACKAGE=1",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-DXcode",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SUPPORTED_PLATFORMS = (
+					macosx,
+					iphoneos,
+					iphonesimulator,
+					appletvos,
+					appletvsimulator,
+					watchos,
+					watchsimulator,
+				);
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					SWIFT_PACKAGE,
+				);
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TVOS_DEPLOYMENT_TARGET = 10.0;
 				USE_HEADERMAP = NO;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
-		OBJ_40 /* Release */ = {
+		OBJ_65 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = TestExtSwift.xcodeproj/TestExtSwiftTests_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/swift-numerics/Sources/_NumericsShims/include",
+				);
+				INFOPLIST_FILE = TestExtSwift.xcodeproj/Algorithms_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/.build/checkouts/swift-numerics/Sources/_NumericsShims/include/module.modulemap",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Algorithms;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+				);
 				SWIFT_VERSION = 5.0;
-				TARGET_NAME = TestExtSwiftTests;
+				TARGET_NAME = Algorithms;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/swift-numerics/Sources/_NumericsShims/include",
+				);
+				INFOPLIST_FILE = TestExtSwift.xcodeproj/Algorithms_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/.build/checkouts/swift-numerics/Sources/_NumericsShims/include/module.modulemap",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Algorithms;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+				);
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Algorithms;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/swift-numerics/Sources/_NumericsShims/include",
+				);
+				INFOPLIST_FILE = TestExtSwift.xcodeproj/RealModule_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/.build/checkouts/swift-numerics/Sources/_NumericsShims/include/module.modulemap",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RealModule;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+				);
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = RealModule;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/swift-numerics/Sources/_NumericsShims/include",
+				);
+				INFOPLIST_FILE = TestExtSwift.xcodeproj/RealModule_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/.build/checkouts/swift-numerics/Sources/_NumericsShims/include/module.modulemap",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RealModule;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+				);
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = RealModule;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -494,6 +1264,69 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		OBJ_103 /* Build configuration list for PBXNativeTarget "TestExtSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_104 /* Debug */,
+				OBJ_105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_120 /* Build configuration list for PBXNativeTarget "TestExtSwiftPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_121 /* Debug */,
+				OBJ_122 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_126 /* Build configuration list for PBXAggregateTarget "TestExtSwiftPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_127 /* Debug */,
+				OBJ_128 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_131 /* Build configuration list for PBXNativeTarget "TestExtSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_132 /* Debug */,
+				OBJ_133 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_149 /* Build configuration list for PBXNativeTarget "_NumericsShims" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_150 /* Debug */,
+				OBJ_151 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_156 /* Build configuration list for PBXNativeTarget "swift-algorithmsPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_157 /* Debug */,
+				OBJ_158 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_162 /* Build configuration list for PBXNativeTarget "swift-numericsPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_163 /* Debug */,
+				OBJ_164 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		OBJ_2 /* Build configuration list for PBXProject "TestExtSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -503,38 +1336,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_20 /* Build configuration list for PBXNativeTarget "TestExtSwift" */ = {
+		OBJ_64 /* Build configuration list for PBXNativeTarget "Algorithms" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_21 /* Debug */,
-				OBJ_22 /* Release */,
+				OBJ_65 /* Debug */,
+				OBJ_66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_27 /* Build configuration list for PBXNativeTarget "TestExtSwiftPackageDescription" */ = {
+		OBJ_86 /* Build configuration list for PBXNativeTarget "RealModule" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_28 /* Debug */,
-				OBJ_29 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_33 /* Build configuration list for PBXAggregateTarget "TestExtSwiftPackageTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_34 /* Debug */,
-				OBJ_35 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_38 /* Build configuration list for PBXNativeTarget "TestExtSwiftTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_39 /* Debug */,
-				OBJ_40 /* Release */,
+				OBJ_87 /* Debug */,
+				OBJ_88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
