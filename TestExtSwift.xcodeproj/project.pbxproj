@@ -21,26 +21,34 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		1C4A80F5378EAE5B94254CC4 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A8FD082E73767B7C91561 /* Row.swift */; };
+		1C4A8205A1B64D453611B581 /* After.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A82B64D1C529D013925E4 /* After.swift */; };
 		1C4A823380FE6AEF6396B56A /* ECPOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A8D52C333DF423CF6D7C4 /* ECPOperators.swift */; };
 		1C4A826C822AF4F760603EC4 /* PartitionsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A8EEDA733A7B8D5303C7B /* PartitionsBuilder.swift */; };
+		1C4A82CFD792CE4AAB0ADCFD /* ParameterizedOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A8E5DE0C016266608E120 /* ParameterizedOperators.swift */; };
+		1C4A82FEABE8AB9BD4D8FC3A /* XCTContext+Parameterized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A81F51CA51EECFF4A9BBA /* XCTContext+Parameterized.swift */; };
+		1C4A843B321B0B244D7055A0 /* Before.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A8B1E0ADE268F881B18B1 /* Before.swift */; };
+		1C4A84D0D3614B3AC9F1B77B /* ParameterizedFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A875B7832AA71AC6AEA9D /* ParameterizedFunctions.swift */; };
+		1C4A8695A0957C5A4949C175 /* ParameterizedOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A85CD897E7B487811EC75 /* ParameterizedOperatorsTests.swift */; };
 		1C4A88A2A1E27FE5BA6C2073 /* XCTContext+ECPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A81F000DAC0CA7118632B /* XCTContext+ECPTests.swift */; };
 		1C4A8960D2E5BBDA1D387909 /* XCTContext+ECP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A82780E35B0BEFA5C2538 /* XCTContext+ECP.swift */; };
+		1C4A8C6880B81ED08A71832D /* ParameterizedTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A857C7E2E240A7194FA60 /* ParameterizedTesting.swift */; };
 		1C4A8CE26D93EFB0FF1EA863 /* ECPFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A8882D753A5C7FA08FFB4 /* ECPFunctions.swift */; };
+		1C4A8CFD94434A0627F6E136 /* SourcesBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A81F5500EA147CD2E9E0B /* SourcesBuilder.swift */; };
 		1C4A8D136EA2AA7830BD133A /* ECPOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A82B3598646D5C323B2F4 /* ECPOperatorsTests.swift */; };
+		1C4A8F04DB6E541FF9883C4A /* XCTContext+ParameterizedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A8B7D6A22B62A809AC202 /* XCTContext+ParameterizedTests.swift */; };
 		1C4A8F233B7C76A076FEEF8D /* EquivalenceClassPartitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A831D15BF9FA0537E877A /* EquivalenceClassPartitionTests.swift */; };
 		1C4A8F35B4D90FAA1A6C8F09 /* EquivalenceClassPartition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A8C038C9F315DD6DCEE7B /* EquivalenceClassPartition.swift */; };
+		1C4A8F9E042DBF42B4231914 /* RowBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A8E320B7F311396A36315 /* RowBuilder.swift */; };
 		OBJ_100 /* _NumericsShims.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-numerics::_NumericsShims::Product" /* _NumericsShims.framework */; };
 		OBJ_108 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Functions.swift */; };
 		OBJ_109 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Operators.swift */; };
-		OBJ_110 /* SourcesBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* SourcesBuilder.swift */; };
-		OBJ_111 /* XCTContext+Parameterized.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* XCTContext+Parameterized.swift */; };
 		OBJ_113 /* Algorithms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-algorithms::Algorithms::Product" /* Algorithms.framework */; };
 		OBJ_114 /* RealModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-numerics::RealModule::Product" /* RealModule.framework */; };
 		OBJ_115 /* _NumericsShims.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-numerics::_NumericsShims::Product" /* _NumericsShims.framework */; };
 		OBJ_124 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_136 /* FunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* FunctionsTests.swift */; };
 		OBJ_137 /* OperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* OperatorsTests.swift */; };
-		OBJ_138 /* XCTContext+ParameterizedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* XCTContext+ParameterizedTests.swift */; };
 		OBJ_139 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* XCTestManifests.swift */; };
 		OBJ_141 /* TestExtSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "TestExtSwift::TestExtSwift::Product" /* TestExtSwift.framework */; };
 		OBJ_142 /* Algorithms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-algorithms::Algorithms::Product" /* Algorithms.framework */; };
@@ -75,20 +83,28 @@
 
 /* Begin PBXFileReference section */
 		1C4A81F000DAC0CA7118632B /* XCTContext+ECPTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTContext+ECPTests.swift"; sourceTree = "<group>"; };
+		1C4A81F51CA51EECFF4A9BBA /* XCTContext+Parameterized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTContext+Parameterized.swift"; sourceTree = "<group>"; };
+		1C4A81F5500EA147CD2E9E0B /* SourcesBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourcesBuilder.swift; sourceTree = "<group>"; };
 		1C4A82780E35B0BEFA5C2538 /* XCTContext+ECP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTContext+ECP.swift"; sourceTree = "<group>"; };
 		1C4A82B3598646D5C323B2F4 /* ECPOperatorsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECPOperatorsTests.swift; sourceTree = "<group>"; };
+		1C4A82B64D1C529D013925E4 /* After.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = After.swift; sourceTree = "<group>"; };
 		1C4A831D15BF9FA0537E877A /* EquivalenceClassPartitionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquivalenceClassPartitionTests.swift; sourceTree = "<group>"; };
+		1C4A857C7E2E240A7194FA60 /* ParameterizedTesting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterizedTesting.swift; sourceTree = "<group>"; };
+		1C4A85CD897E7B487811EC75 /* ParameterizedOperatorsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterizedOperatorsTests.swift; sourceTree = "<group>"; };
+		1C4A875B7832AA71AC6AEA9D /* ParameterizedFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterizedFunctions.swift; sourceTree = "<group>"; };
 		1C4A8882D753A5C7FA08FFB4 /* ECPFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECPFunctions.swift; sourceTree = "<group>"; };
+		1C4A8B1E0ADE268F881B18B1 /* Before.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Before.swift; sourceTree = "<group>"; };
+		1C4A8B7D6A22B62A809AC202 /* XCTContext+ParameterizedTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTContext+ParameterizedTests.swift"; sourceTree = "<group>"; };
 		1C4A8C038C9F315DD6DCEE7B /* EquivalenceClassPartition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquivalenceClassPartition.swift; sourceTree = "<group>"; };
 		1C4A8D52C333DF423CF6D7C4 /* ECPOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECPOperators.swift; sourceTree = "<group>"; };
+		1C4A8E320B7F311396A36315 /* RowBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowBuilder.swift; sourceTree = "<group>"; };
+		1C4A8E5DE0C016266608E120 /* ParameterizedOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterizedOperators.swift; sourceTree = "<group>"; };
 		1C4A8EEDA733A7B8D5303C7B /* PartitionsBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartitionsBuilder.swift; sourceTree = "<group>"; };
+		1C4A8FD082E73767B7C91561 /* Row.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Functions.swift */ = {isa = PBXFileReference; path = Functions.swift; sourceTree = "<group>"; };
 		OBJ_11 /* Operators.swift */ = {isa = PBXFileReference; path = Operators.swift; sourceTree = "<group>"; };
-		OBJ_12 /* SourcesBuilder.swift */ = {isa = PBXFileReference; path = SourcesBuilder.swift; sourceTree = "<group>"; };
-		OBJ_13 /* XCTContext+Parameterized.swift */ = {isa = PBXFileReference; path = "XCTContext+Parameterized.swift"; sourceTree = "<group>"; };
 		OBJ_17 /* FunctionsTests.swift */ = {isa = PBXFileReference; path = FunctionsTests.swift; sourceTree = "<group>"; };
 		OBJ_18 /* OperatorsTests.swift */ = {isa = PBXFileReference; path = OperatorsTests.swift; sourceTree = "<group>"; };
-		OBJ_19 /* XCTContext+ParameterizedTests.swift */ = {isa = PBXFileReference; path = "XCTContext+ParameterizedTests.swift"; sourceTree = "<group>"; };
 		OBJ_20 /* XCTestManifests.swift */ = {isa = PBXFileReference; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_24 /* Chain.swift */ = {isa = PBXFileReference; path = Chain.swift; sourceTree = "<group>"; };
 		OBJ_25 /* Chunked.swift */ = {isa = PBXFileReference; path = Chunked.swift; sourceTree = "<group>"; };
@@ -164,6 +180,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C4A8138591E8BD0D43FCD31 /* Parameterized */ = {
+			isa = PBXGroup;
+			children = (
+				1C4A81F5500EA147CD2E9E0B /* SourcesBuilder.swift */,
+				1C4A81F51CA51EECFF4A9BBA /* XCTContext+Parameterized.swift */,
+				1C4A875B7832AA71AC6AEA9D /* ParameterizedFunctions.swift */,
+				1C4A8E5DE0C016266608E120 /* ParameterizedOperators.swift */,
+				1C4A857C7E2E240A7194FA60 /* ParameterizedTesting.swift */,
+			);
+			path = Parameterized;
+			sourceTree = "<group>";
+		};
 		1C4A879A3D9583DD7F0799F3 /* ECP */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +214,15 @@
 			path = ECP;
 			sourceTree = "<group>";
 		};
+		1C4A8FA3BFA67BFF19CB9AE0 /* Parameterized */ = {
+			isa = PBXGroup;
+			children = (
+				1C4A85CD897E7B487811EC75 /* ParameterizedOperatorsTests.swift */,
+				1C4A8B7D6A22B62A809AC202 /* XCTContext+ParameterizedTests.swift */,
+			);
+			path = Parameterized;
+			sourceTree = "<group>";
+		};
 		OBJ_14 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,9 +237,9 @@
 			children = (
 				OBJ_17 /* FunctionsTests.swift */,
 				OBJ_18 /* OperatorsTests.swift */,
-				OBJ_19 /* XCTContext+ParameterizedTests.swift */,
 				OBJ_20 /* XCTestManifests.swift */,
 				1C4A8D0460B923DF7DBA1079 /* ECP */,
+				1C4A8FA3BFA67BFF19CB9AE0 /* Parameterized */,
 			);
 			name = TestExtSwiftTests;
 			path = Tests/TestExtSwiftTests;
@@ -354,9 +391,12 @@
 			children = (
 				OBJ_10 /* Functions.swift */,
 				OBJ_11 /* Operators.swift */,
-				OBJ_12 /* SourcesBuilder.swift */,
-				OBJ_13 /* XCTContext+Parameterized.swift */,
 				1C4A879A3D9583DD7F0799F3 /* ECP */,
+				1C4A8138591E8BD0D43FCD31 /* Parameterized */,
+				1C4A8B1E0ADE268F881B18B1 /* Before.swift */,
+				1C4A82B64D1C529D013925E4 /* After.swift */,
+				1C4A8E320B7F311396A36315 /* RowBuilder.swift */,
+				1C4A8FD082E73767B7C91561 /* Row.swift */,
 			);
 			name = TestExtSwift;
 			path = Sources/TestExtSwift;
@@ -520,13 +560,20 @@
 			files = (
 				OBJ_108 /* Functions.swift in Sources */,
 				OBJ_109 /* Operators.swift in Sources */,
-				OBJ_110 /* SourcesBuilder.swift in Sources */,
-				OBJ_111 /* XCTContext+Parameterized.swift in Sources */,
 				1C4A8960D2E5BBDA1D387909 /* XCTContext+ECP.swift in Sources */,
 				1C4A8F35B4D90FAA1A6C8F09 /* EquivalenceClassPartition.swift in Sources */,
 				1C4A826C822AF4F760603EC4 /* PartitionsBuilder.swift in Sources */,
 				1C4A823380FE6AEF6396B56A /* ECPOperators.swift in Sources */,
 				1C4A8CE26D93EFB0FF1EA863 /* ECPFunctions.swift in Sources */,
+				1C4A8CFD94434A0627F6E136 /* SourcesBuilder.swift in Sources */,
+				1C4A82FEABE8AB9BD4D8FC3A /* XCTContext+Parameterized.swift in Sources */,
+				1C4A84D0D3614B3AC9F1B77B /* ParameterizedFunctions.swift in Sources */,
+				1C4A82CFD792CE4AAB0ADCFD /* ParameterizedOperators.swift in Sources */,
+				1C4A8C6880B81ED08A71832D /* ParameterizedTesting.swift in Sources */,
+				1C4A843B321B0B244D7055A0 /* Before.swift in Sources */,
+				1C4A8205A1B64D453611B581 /* After.swift in Sources */,
+				1C4A8F9E042DBF42B4231914 /* RowBuilder.swift in Sources */,
+				1C4A80F5378EAE5B94254CC4 /* Row.swift in Sources */,
 			);
 		};
 		OBJ_123 /* Sources */ = {
@@ -540,11 +587,12 @@
 			files = (
 				OBJ_136 /* FunctionsTests.swift in Sources */,
 				OBJ_137 /* OperatorsTests.swift in Sources */,
-				OBJ_138 /* XCTContext+ParameterizedTests.swift in Sources */,
 				OBJ_139 /* XCTestManifests.swift in Sources */,
 				1C4A88A2A1E27FE5BA6C2073 /* XCTContext+ECPTests.swift in Sources */,
 				1C4A8F233B7C76A076FEEF8D /* EquivalenceClassPartitionTests.swift in Sources */,
 				1C4A8D136EA2AA7830BD133A /* ECPOperatorsTests.swift in Sources */,
+				1C4A8695A0957C5A4949C175 /* ParameterizedOperatorsTests.swift in Sources */,
+				1C4A8F04DB6E541FF9883C4A /* XCTContext+ParameterizedTests.swift in Sources */,
 			);
 		};
 		OBJ_152 /* Sources */ = {

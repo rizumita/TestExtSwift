@@ -5,13 +5,6 @@
 import Foundation
 import XCTest
 
-precedencegroup ECPPrecedence {
-    lowerThan: AssignmentPrecedence
-    associativity: right
-}
-
-infix operator =>: ECPPrecedence
-
 public func =><S, Value>(lhs: S, @PartitionsBuilder rhs: () -> [EquivalenceClassPartition<Value, ()>]) throws where S: Sequence, S.Element == Value {
     for partition in rhs() {
         for value in try partition.select(from: lhs) {
