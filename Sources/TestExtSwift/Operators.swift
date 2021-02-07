@@ -31,7 +31,7 @@ public func **<A, B>(lhs: A, rhs: B) -> [(A, B)] {
 }
 
 precedencegroup TestPrecedence {
-    lowerThan: AdditionPrecedence
+    lowerThan: DefaultPrecedence
     associativity: right
 }
 
