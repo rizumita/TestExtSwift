@@ -31,6 +31,12 @@ class FunctionsTests: XCTestCase {
         XCTAssertEqual(result[1].1, 2)
     }
 
+    func test_r_RowBuilder() throws {
+        let row = r { 1; 2; 3 }
+        XCTAssertEqual(row.value.0, 1)
+        XCTAssertEqual(row.value.1, 2)
+        XCTAssertEqual(row.value.2, 3)
+    }
 
     static var allTests = [
         ("testSrc_tuples", testSrc_tuples),

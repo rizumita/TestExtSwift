@@ -8,6 +8,10 @@
 import Foundation
 import XCTest
 
+public func r<A>(@RowBuilder _ row: () -> Row<A>) -> Row<A> {
+    row()
+}
+
 public func s<A>(_ a: A, _ line: UInt = #line) -> Row<A> {
     Row(value: a, line: line)
 }
@@ -36,4 +40,15 @@ public func s<A, B, C, D, E, F>(_ a: A,
                                 _ f: F,
                                 _ line: UInt = #line) -> Row<(A, B, C, D, E, F)> {
     Row(value: (a, b, c, d, e, f), line: line)
+}
+
+public func s<A, B, C, D, E, F, G>(_ a: A,
+                                   _ b: B,
+                                   _ c: C,
+                                   _ d: D,
+                                   _ e: E,
+                                   _ f: F,
+                                   _ g: G,
+                                   _ line: UInt = #line) -> Row<(A, B, C, D, E, F, G)> {
+    Row(value: (a, b, c, d, e, f, g), line: line)
 }
