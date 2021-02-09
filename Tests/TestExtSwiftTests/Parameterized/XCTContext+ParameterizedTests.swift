@@ -35,19 +35,19 @@ class XCTContext_ParameterizedTests: XCTestCase {
     
     func testRunActivity_lined() throws {
         var tuples = [(1, 1), (2, 2)]
-        XCTContext.runActivity(named: "Arrays", {
+        XCTContext.runActivity(named: "Array", params: {
             s(1, 1)
             s(2, 2)
-        }) { (_, arg, expected, line) in
+        }, test: { (_, arg: Int, expected: Int, line) in
             let tuple = tuples.removeFirst()
             XCTAssertEqual(tuple.0, arg, line: line)
             XCTAssertEqual(tuple.1, expected, line: line)
-        }
+        })
     }
 
     func testRunActivity_array() throws {
         var tuples = [(1, 1), (2, 2)]
-        XCTContext.runActivity(named: "Array", [
+        XCTContext.runActivity(named: "Array", params: [
             s(1, 1),
             s(2, 2)
         ]) { (_, arg, expected, line) in
@@ -58,11 +58,11 @@ class XCTContext_ParameterizedTests: XCTestCase {
     }
 
     func testRunActivity_setUp() throws {
-        XCTContext.runActivity(named: "setUp", [
+        XCTContext.runActivity(named: "setUp", params: [
             s(1, 1),
             s(2, 2)
-        ]) { arg in
-            print("setUp: \(arg)")
+        ]) { a1, a2 in
+            print("setUp: \(a1) \(a2)")
         } test: { (_, arg, expected, line) in }
     }
 

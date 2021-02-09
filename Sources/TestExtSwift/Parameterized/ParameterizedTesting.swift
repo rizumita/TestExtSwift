@@ -5,7 +5,7 @@
 import Foundation
 import XCTest
 
-public typealias Params = ParameterizedTesting
+public typealias Parameterized = ParameterizedTesting
 
 public class ParameterizedTesting<Params> {
     let name: String

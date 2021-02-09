@@ -17,7 +17,7 @@ class ParameterizedOperatorsTests: XCTestCase {
                 ^{ 2; 3; true }
                 ^{ 3; 3; false }
             } =>
-            Params("Parameterized Testing")
+            Parameterized("Parameterized Testing")
                 .before { p1, p2, p3 in print("before") }
                 .after { p1, p2, p3 in print("after") }
                 .test { _, p1, p2, p3, line in
@@ -29,7 +29,7 @@ class ParameterizedOperatorsTests: XCTestCase {
         try [^{ 1; 3; false },
              ^{ 2; 3; true },
              ^{ 3; 3; false }] =>
-            Params("Parameterized Testing")
+            Parameterized("Parameterized Testing")
                 .test { _, p1, p2, p3, line in
                     XCTAssertEqual(p1 + 1 == p2, p3, line: line)
                 }
@@ -37,7 +37,7 @@ class ParameterizedOperatorsTests: XCTestCase {
 
     func testParam_Seq() throws {
         try [1, 2, 3] =>
-            Params("Parameterized Testing")
+            Parameterized("Parameterized Testing")
                 .test { _, p in XCTAssertEqual(p, p) }
     }
 
@@ -51,7 +51,7 @@ class ParameterizedOperatorsTests: XCTestCase {
         }
 
         try A.allCases ** B.allCases =>
-            Params("Parameterized Testing")
+            Parameterized("Parameterized Testing")
                 .test { (_, a, b: B) in
                     print(a)
                     print(b)
