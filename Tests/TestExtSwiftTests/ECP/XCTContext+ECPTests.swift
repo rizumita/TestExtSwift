@@ -12,20 +12,21 @@ import TestExtSwift
 class XCTContext_ECPTests: XCTestCase {
 
     func testECP() throws {
-        try XCTContext.runActivity(
-            values: 1...100,
-            partitions: .valid(name: "Valid case") { $0 % 4 == 0 } test: { _, value in
-                XCTAssertEqual(value % 2, 0)
-            },
-            .invalid(name: "Invalid case1") { $0 % 4 != 0 } test: { _, value in
-                XCTAssertNotEqual(value % 4, 0)
-            },
-            .invalid(name: "Invalid case2",
-                     representative: 1,
-                     boundary: { (value1: Int, value2: Int) in value1 < value2 },
-                     relation: { (value: Int) in value == 100 },
-                     test: { (_, value: Int) in XCTAssertEqual(value, 100) })
-        )
+        try XCTContext.runActivity(values: 1...100) {
+            Valid("Valid case")
+                .relation { $0 % 4 == 0 }
+                .test { XCTAssertEqual($1 % 2, 0) }
+
+            Invalid("Invalid case 1")
+                .relation { $0 % 4 != 0 }
+                .test { XCTAssertNotEqual($1 % 4, 0) }
+
+            Invalid("Invalid case 2")
+                .representative(1)
+                .order { $0 < $1 }
+                .relation { $0 == 100 }
+                .test { XCTAssertEqual($1, 100) }
+        }
     }
 
     static var allTests = [

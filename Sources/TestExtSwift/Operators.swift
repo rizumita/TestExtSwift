@@ -8,7 +8,12 @@
 import Foundation
 
 /// Direct product
-infix operator **
+precedencegroup DirectProductPrecedence {
+    higherThan: TestPrecedence
+    associativity: right
+}
+
+infix operator **: DirectProductPrecedence
 
 public func **<A, B>(lhs: [A], rhs: [B]) -> [(A, B)] {
     lhs.flatMap { a in
@@ -31,8 +36,9 @@ public func **<A, B>(lhs: A, rhs: B) -> [(A, B)] {
 }
 
 precedencegroup TestPrecedence {
-    lowerThan: DefaultPrecedence
-    associativity: right
+    higherThan: DefaultPrecedence
+    lowerThan: RangeFormationPrecedence
+    associativity: left
 }
 
 infix operator =>: TestPrecedence

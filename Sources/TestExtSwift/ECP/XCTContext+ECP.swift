@@ -7,19 +7,14 @@ import XCTest
 
 public extension XCTContext {
     @discardableResult
-    class func runActivity<S, Result>(values: S,
-                                      partitions: EquivalenceClassPartition<S.Element, Result>...) throws -> [Result] where S: Sequence {
-        var results = [Result]()
+    class func runActivity<S, Value, Result>(values: S,
+                                             @PartitionsBuilder partitions: () -> [RunTests<Value, Result>]) throws -> [Result] where S: Sequence, S.Element == Value {
+        try partitions().flatMap { runTests in try runTests(AnySequence(values)) }
+    }
 
-        for partition in partitions {
-            for value in try partition.select(from: values) {
-                _ = try XCTContext.runActivity(named: partition.name) { activity in
-                    let result = try partition.test(activity, value)
-                    results.append(result)
-                }
-            }
-        }
-
-        return results
+    class func runActivity<Value, Result>(@SourcesBuilder values: () -> [Value],
+                                          @PartitionsBuilder partitions: () -> [RunTests<Value, Result>]) throws -> [Result] {
+        let v = values()
+        return try partitions().flatMap { runTests in try runTests(AnySequence(v)) }
     }
 }

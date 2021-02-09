@@ -12,16 +12,21 @@ import XCTest
 class ECPOperatorsTests: XCTestCase {
 
     func testECPOperator() throws {
-//        1...100 => {
-//            valid("Valid case")
-//            => relation { $0 % 4 == 0 }
-//            => setUp { v in print(v) }
-//            => test { XCTAssertEqual($1 % 4, 0) }
-//
-//            invalid("Invalid case", representative: 100, order: { $0 <= $1 })
-//            => relation { $0 % 4 != 0 }
-//            => test { XCTAssertNotEqual($1 % 4, 0) }
-//        }
+        try (1...100) => ECP("ECP Testing") {
+            Valid("Valid case")
+                .relation { $0 % 4 == 0 }
+                .test { XCTAssertEqual($1 % 2, 0) }
+
+            Invalid("Invalid case 1")
+                .relation { $0 % 4 != 0 }
+                .test { XCTAssertNotEqual($1 % 4, 0) }
+
+            Invalid("Invalid case 2")
+                .representative(1)
+                .order { $0 < $1 }
+                .relation { $0 == 100 }
+                .test { XCTAssertEqual($1, 100) }
+        }
     }
 
     static var allTests = [
