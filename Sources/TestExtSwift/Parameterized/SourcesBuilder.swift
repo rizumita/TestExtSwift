@@ -21,6 +21,10 @@ public struct SourcesBuilder {
         rows
     }
 
+    public static func buildBlock<A>(_ rowArray: [Row<A>]...) -> [Row<A>] {
+        rowArray.flatMap { $0 }
+    }
+
     public static func buildBlock<A, B>(_ array: [(A, B)]...) -> [(A, B)] {
         array.flatMap { $0 }
     }
