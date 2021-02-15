@@ -52,7 +52,7 @@ class ParameterizedOperatorsTests: XCTestCase {
 
         try A.allCases ** B.allCases =>
             Parameterized("Parameterized Testing")
-                .test { (_, a, b: B) in
+                .test { _, a, b in
                     print(a)
                     print(b)
                 }

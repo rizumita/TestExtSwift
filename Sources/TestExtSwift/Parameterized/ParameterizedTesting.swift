@@ -24,80 +24,86 @@ public class ParameterizedTesting<Params> {
         return self
     }
 
-    public func test<Result>(_ t: @escaping (XCTActivity, Params) throws -> Result) -> ParameterizedTestingReady<Params, Result> {
+    public func test<Result>(_ t: @escaping (XCTActivity, Params) throws -> Result) -> ParameterizedTestingReady<Params, Result, WithoutLine> {
         ParameterizedTestingReady(name: name, before: before, after: after, test: { activity, params in
             try t(activity, params)
         })
     }
 
-    public func test<A, B, Result>(_ t: @escaping (XCTActivity, A, B) throws -> Result) -> ParameterizedTestingReady<Params, Result> where Params == (A, B) {
+    public func test<A, B, Result>(_ t: @escaping (XCTActivity, A, B) throws -> Result) -> ParameterizedTestingReady<Params, Result, WithoutLine> where Params == (A, B) {
         ParameterizedTestingReady(name: name, before: before, after: after, test: { activity, params in
             try t(activity, params.0, params.1)
         })
     }
 
-    public func test<A, B, C, Result>(_ t: @escaping (XCTActivity, A, B, C) throws -> Result) -> ParameterizedTestingReady<Params, Result> where Params == (A, B, C) {
+    public func test<A, B, C, Result>(_ t: @escaping (XCTActivity, A, B, C) throws -> Result) -> ParameterizedTestingReady<Params, Result, WithoutLine> where Params == (A, B, C) {
         ParameterizedTestingReady(name: name, before: before, after: after, test: { activity, params in
             try t(activity, params.0, params.1, params.2)
         })
     }
 
-    public func test<A, B, C, D, Result>(_ t: @escaping (XCTActivity, A, B, C, D) throws -> Result) -> ParameterizedTestingReady<Params, Result> where Params == (A, B, C, D) {
+    public func test<A, B, C, D, Result>(_ t: @escaping (XCTActivity, A, B, C, D) throws -> Result) -> ParameterizedTestingReady<Params, Result, WithoutLine> where Params == (A, B, C, D) {
         ParameterizedTestingReady(name: name, before: before, after: after, test: { activity, params in
             try t(activity, params.0, params.1, params.2, params.3)
         })
     }
 
-    public func test<A, B, C, D, E, Result>(_ t: @escaping (XCTActivity, A, B, C, D, E) throws -> Result) -> ParameterizedTestingReady<Params, Result> where Params == (A, B, C, D, E) {
+    public func test<A, B, C, D, E, Result>(_ t: @escaping (XCTActivity, A, B, C, D, E) throws -> Result) -> ParameterizedTestingReady<Params, Result, WithoutLine> where Params == (A, B, C, D, E) {
         ParameterizedTestingReady(name: name, before: before, after: after, test: { activity, params in
             try t(activity, params.0, params.1, params.2, params.3, params.4)
         })
     }
 
-    public func test<A, B, C, D, E, F, Result>(_ t: @escaping (XCTActivity, A, B, C, D, E, F) throws -> Result) -> ParameterizedTestingReady<Params, Result> where Params == (A, B, C, D, E, F) {
+    public func test<A, B, C, D, E, F, Result>(_ t: @escaping (XCTActivity, A, B, C, D, E, F) throws -> Result) -> ParameterizedTestingReady<Params, Result, WithoutLine> where Params == (A, B, C, D, E, F) {
         ParameterizedTestingReady(name: name, before: before, after: after, test: { activity, params in
             try t(activity, params.0, params.1, params.2, params.3, params.4, params.5)
         })
     }
 
-    public func test<Result>(_ t: @escaping (XCTActivity, Params, UInt) throws -> Result) -> ParameterizedTestingReady<Params, Result> {
-        ParameterizedTestingReady<Params, Result>(name: name, before: before, after: after, testWithLine: { activity, params, line in
+    public func test<Result>(_ t: @escaping (XCTActivity, Params, UInt) throws -> Result) -> ParameterizedTestingReady<Params, Result, WithLine> {
+        ParameterizedTestingReady(name: name, before: before, after: after, testWithLine: { activity, params, line in
             try t(activity, params, line)
         })
     }
 
-    public func test<A, B, Result>(_ t: @escaping (XCTActivity, A, B, UInt) throws -> Result) -> ParameterizedTestingReady<Params, Result> where Params == (A, B) {
+    public func test<A, B, Result>(_ t: @escaping (XCTActivity, A, B, UInt) throws -> Result) -> ParameterizedTestingReady<Params, Result, WithLine> where Params == (A, B) {
         ParameterizedTestingReady(name: name, before: before, after: after, testWithLine: { activity, params, line in
             try t(activity, params.0, params.1, line)
         })
     }
 
-    public func test<A, B, C, Result>(_ t: @escaping (XCTActivity, A, B, C, UInt) throws -> Result) -> ParameterizedTestingReady<Params, Result> where Params == (A, B, C) {
+    public func test<A, B, C, Result>(_ t: @escaping (XCTActivity, A, B, C, UInt) throws -> Result) -> ParameterizedTestingReady<Params, Result, WithLine> where Params == (A, B, C) {
         ParameterizedTestingReady(name: name, before: before, after: after, testWithLine: { activity, params, line in
             try t(activity, params.0, params.1, params.2, line)
         })
     }
 
-    public func test<A, B, C, D, Result>(_ t: @escaping (XCTActivity, A, B, C, D, UInt) throws -> Result) -> ParameterizedTestingReady<Params, Result> where Params == (A, B, C, D) {
+    public func test<A, B, C, D, Result>(_ t: @escaping (XCTActivity, A, B, C, D, UInt) throws -> Result) -> ParameterizedTestingReady<Params, Result, WithLine> where Params == (A, B, C, D) {
         ParameterizedTestingReady(name: name, before: before, after: after, testWithLine: { activity, params, line in
             try t(activity, params.0, params.1, params.2, params.3, line)
         })
     }
 
-    public func test<A, B, C, D, E, Result>(_ t: @escaping (XCTActivity, A, B, C, D, E, UInt) throws -> Result) -> ParameterizedTestingReady<Params, Result> where Params == (A, B, C, D, E) {
+    public func test<A, B, C, D, E, Result>(_ t: @escaping (XCTActivity, A, B, C, D, E, UInt) throws -> Result) -> ParameterizedTestingReady<Params, Result, WithLine> where Params == (A, B, C, D, E) {
         ParameterizedTestingReady(name: name, before: before, after: after, testWithLine: { activity, params, line in
             try t(activity, params.0, params.1, params.2, params.3, params.4, line)
         })
     }
 
-    public func test<A, B, C, D, E, F, Result>(_ t: @escaping (XCTActivity, A, B, C, D, E, F, UInt) throws -> Result) -> ParameterizedTestingReady<Params, Result> where Params == (A, B, C, D, E, F) {
+    public func test<A, B, C, D, E, F, Result>(_ t: @escaping (XCTActivity, A, B, C, D, E, F, UInt) throws -> Result) -> ParameterizedTestingReady<Params, Result, WithLine> where Params == (A, B, C, D, E, F) {
         ParameterizedTestingReady(name: name, before: before, after: after, testWithLine: { activity, params, line in
             try t(activity, params.0, params.1, params.2, params.3, params.4, params.5, line)
         })
     }
 }
 
-public class ParameterizedTestingReady<Params, Result> {
+public protocol LineState {}
+
+public enum WithLine: LineState {}
+
+public enum WithoutLine: LineState {}
+
+public class ParameterizedTestingReady<Params, Result, LState: LineState> {
     let name: String
     var before: (Params) throws -> () = { _ in }
     var after: (Params) throws -> () = { _ in }
@@ -132,7 +138,9 @@ public class ParameterizedTestingReady<Params, Result> {
         after = a
         return self
     }
+}
 
+extension ParameterizedTestingReady where LState == WithoutLine {
     func runTests(rows: [Row<Params>]) throws -> [Result] {
         try rows.map { row in
             try before(row.value)
@@ -141,7 +149,25 @@ public class ParameterizedTestingReady<Params, Result> {
                 if let test = test {
                     isTested = true
                     return try test(activity, row.value)
-                } else if let test = testWithLine {
+                } else {
+                    fatalError()
+                }
+            }
+
+            try after(row.value)
+
+            return result
+        }
+    }
+}
+
+extension ParameterizedTestingReady where LState == WithLine {
+    func runTests(rows: [Row<Params>]) throws -> [Result] {
+        try rows.map { row in
+            try before(row.value)
+
+            let result = try XCTContext.runActivity(named: name) { activity -> Result in
+                if let test = testWithLine {
                     isTested = true
                     return try test(activity, row.value, row.line)
                 } else {
